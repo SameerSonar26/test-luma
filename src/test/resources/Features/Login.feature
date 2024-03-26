@@ -10,3 +10,4 @@ Feature: login
       | "sonarsameer1@gmail.com"  | "ddff26@DDFF23" |
       | "sonarsameer30@gmail.com" | "ddff26@DDFF"   |
       | "sonarsameer30@gmail.com" | "ddff26@DDFF23" |
+      | "sonarsameer30@gmail.com" | "ddff26@DDFF2345" |
