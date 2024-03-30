@@ -2,6 +2,7 @@ package com.luma;
 
 import java.time.Duration;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,17 +14,18 @@ import com.luma.exception.InvalidBrowserNameError;
 
 public class Keyword {
 	public static RemoteWebDriver driver;
-	public FluentWait wait;
+	public static FluentWait wait;
+	private static final Logger LOG = Logger.getLogger(Keyword.class);
 
 	public void openBrowser(String browserName) {
 		if (browserName.equalsIgnoreCase("Chrome")) {
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
-			System.out.println("Launching Chrome Driver");
+			LOG.info("Launching Chrome Driver");
 		} else if (browserName.equalsIgnoreCase("FireFox")) {
 			driver = new FirefoxDriver();
 			driver.manage().window().maximize();
-			System.out.println("Launching FireFox Driver");
+			LOG.info("Launching FireFox Driver");
 		} else {
 			throw new InvalidBrowserNameError(browserName);
 		}

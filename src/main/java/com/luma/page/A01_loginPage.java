@@ -27,13 +27,12 @@ public class A01_loginPage {
 	@FindBy(css = "button[id=\"send2\"]")
 	public WebElement signInButton;
 
-//	@FindBy(css = "div[data-bind=\"html: $parent.prepareMessageForHtml(message.text)\"]")
-//	public WebElement loginErrorText;
+
 	
 	@FindBy(css = "strong[id=\"block-new-customer-heading\"]")
 	public WebElement loginErrorText;
 
-	@FindBy(css = "li[class=\"greet welcome\"]>span[class*=\"in\"]")
+	@FindBy(css = "span[class=\"logged-in\"]")
 	public WebElement loggedInText;
 
 	public void clickOnLoginLink() {
@@ -56,7 +55,8 @@ public class A01_loginPage {
 		return loginErrorText.getText();
 	}
 
-	public String loggedInText() {
+	public String loggedInText() throws InterruptedException {
+//		Thread.sleep(10000);
 		return loggedInText.getText();
 	}
 
