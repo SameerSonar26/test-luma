@@ -51,12 +51,12 @@ public class A01_loginPage {
 		signInButton.click();
 	}
 
-	public String logInErrorText() {
+	public String logInErrorText() { 
 		return loginErrorText.getText();
 	}
 
 	public String loggedInText() throws InterruptedException {
-//		Thread.sleep(10000);
+		keyword.waitForElementToBeVisible(loggedInText);
 		return loggedInText.getText();
 	}
 

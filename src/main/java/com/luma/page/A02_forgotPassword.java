@@ -6,6 +6,8 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.luma.Keyword;
 
+
+
 public class A02_forgotPassword {
 	Keyword keyword = new Keyword();
 
@@ -38,7 +40,17 @@ public class A02_forgotPassword {
 	public WebElement resetPasswordMsg;
 
 	public String resetPasswordMsg() {
+		keyword.waitForElementToBeVisible(resetPasswordMsg);
 		return resetPasswordMsg.getText();
+
+	}
+
+	@FindBy(css = "div[data-bind=\"html: $parent.prepareMessageForHtml(message.text)\"]")
+	public WebElement emptyTextFieldErrorMsg;
+
+	public String emptyForgotPasswordField() {
+		keyword.waitForElementToBeVisible(emptyTextFieldErrorMsg);
+		return emptyTextFieldErrorMsg.getText();
 
 	}
 }

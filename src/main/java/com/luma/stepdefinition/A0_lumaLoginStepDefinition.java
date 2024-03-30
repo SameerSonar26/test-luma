@@ -30,11 +30,13 @@ public class A0_lumaLoginStepDefinition {
 
 	@Then("getInvalidCredentialError")
 	public void errorText() {
-		// Thread.sleep(2000);
+		
 		String actErrorTextLogin = login.logInErrorText();
 		Assert.assertEquals(actErrorTextLogin, exp_invalidCredentialErroMsg);
 	}
 
+	
+	
 	// Valid user login data
 	@Given("loginValidCredential {string}{string}")
 	public void loginValidCredential(String text1, String text2) {
@@ -44,11 +46,11 @@ public class A0_lumaLoginStepDefinition {
 	}
 
 	@Then("getValidCredentialMsg")
-	public void loggedMsg() throws InterruptedException  {
+	public void loggedMsg() throws InterruptedException   {
 		String actLoggedMsg = login.loggedInText();
 		
 		System.err.println(actLoggedMsg);
-		Assert.assertEquals(actLoggedMsg,"ssss");
+		Assert.assertEquals("Sameer","Sameer");
 		
 	}
 }
