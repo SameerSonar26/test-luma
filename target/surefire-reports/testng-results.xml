@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-26T09:09:37 IST" name="Suite" finished-at="2024-03-26T09:10:15 IST" duration-ms="37936">
+  <suite started-at="2024-03-29T21:01:47 IST" name="Suite" finished-at="2024-03-29T21:02:42 IST" duration-ms="54838">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.luma.base.TestRunner@393671df]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.luma.base.TestRunner@15043a2f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-03-26T09:09:37 IST" name="Test" finished-at="2024-03-26T09:10:15 IST" duration-ms="37936">
+    <test started-at="2024-03-29T21:01:47 IST" name="Test" finished-at="2024-03-29T21:02:42 IST" duration-ms="54838">
       <class name="com.luma.base.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.luma.base.TestRunner@393671df]" started-at="2024-03-26T09:09:37 IST" name="setUpClass" finished-at="2024-03-26T09:09:38 IST" duration-ms="281" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.luma.base.TestRunner@15043a2f]" started-at="2024-03-29T21:01:47 IST" name="setUpClass" finished-at="2024-03-29T21:01:47 IST" duration-ms="214" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5d21202d]]>
+                <![CDATA[org.testng.TestRunner@58aa10f4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.luma.base.TestRunner@393671df]" started-at="2024-03-26T09:09:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-26T09:09:52 IST" duration-ms="14305" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.luma.base.TestRunner@15043a2f]" started-at="2024-03-29T21:01:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-29T21:02:00 IST" duration-ms="12960" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.luma.base.TestRunner@393671df]" started-at="2024-03-26T09:09:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-26T09:10:04 IST" duration-ms="11748" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.luma.base.TestRunner@15043a2f]" started-at="2024-03-29T21:02:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-29T21:02:12 IST" duration-ms="11528" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.luma.base.TestRunner@393671df]" started-at="2024-03-26T09:10:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-26T09:10:15 IST" duration-ms="11555" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.luma.base.TestRunner@15043a2f]" started-at="2024-03-29T21:02:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-29T21:02:23 IST" duration-ms="11206" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,56 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.luma.base.TestRunner@393671df]" started-at="2024-03-26T09:10:15 IST" name="tearDownClass" finished-at="2024-03-26T09:10:15 IST" duration-ms="1" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.luma.base.TestRunner@15043a2f]" started-at="2024-03-29T21:02:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-29T21:02:35 IST" duration-ms="11559" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["login"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [ssss] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [ssss] but found []
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.luma.stepdefinition.A0_lumaLoginStepDefinition.loggedMsg(A0_lumaLoginStepDefinition.java:51)
+at ✽.getValidCredentialMsg(file:///D:/01%20Sameer/01%20Java/01%20Project/ssWorkspace/Z85_LUMA/src/test/resources/Features/Login.feature:19)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.luma.base.TestRunner@15043a2f]" started-at="2024-03-29T21:02:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-29T21:02:42 IST" duration-ms="7203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Step Para"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registration Page"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.luma.base.TestRunner@15043a2f]" started-at="2024-03-29T21:02:42 IST" name="tearDownClass" finished-at="2024-03-29T21:02:42 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
